@@ -8,7 +8,7 @@ namespace rmsp.nalog.collection
 {
     internal class PlaywrightEngine
     {
-        public static async Task<PlaywrightExtra> OpenBrowser(bool headless = false)
+        public static async Task<PlaywrightExtra> OpenBrowser(bool headless = true)
         {
             var playwright = new PlaywrightExtra(BrowserTypeEnum.Chromium);
             playwright.Install();

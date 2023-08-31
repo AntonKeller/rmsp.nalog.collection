@@ -28,46 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.ExecuteButton = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.ListScripts = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // ListScripts
             // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 0);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(201, 450);
-            this.listBox1.TabIndex = 0;
-            // 
-            // ExecuteButton
-            // 
-            this.ExecuteButton.Location = new System.Drawing.Point(207, 12);
-            this.ExecuteButton.Name = "ExecuteButton";
-            this.ExecuteButton.Size = new System.Drawing.Size(136, 23);
-            this.ExecuteButton.TabIndex = 2;
-            this.ExecuteButton.Text = "Выполнить";
-            this.ExecuteButton.UseVisualStyleBackColor = true;
-            this.ExecuteButton.Click += new System.EventHandler(this.ExecuteButton_Click);
+            this.ListScripts.BackColor = System.Drawing.Color.White;
+            this.ListScripts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ListScripts.Font = new System.Drawing.Font("PT Sans Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListScripts.ForeColor = System.Drawing.Color.Black;
+            this.ListScripts.FormattingEnabled = true;
+            this.ListScripts.ItemHeight = 21;
+            this.ListScripts.Location = new System.Drawing.Point(0, 0);
+            this.ListScripts.Name = "ListScripts";
+            this.ListScripts.Size = new System.Drawing.Size(509, 450);
+            this.ListScripts.TabIndex = 0;
+            this.ListScripts.UseTabStops = false;
+            this.ListScripts.DoubleClick += new System.EventHandler(this.ListScripts_DoubleClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ExecuteButton);
-            this.Controls.Add(this.listBox1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(509, 450);
+            this.Controls.Add(this.ListScripts);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Скрипты";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button ExecuteButton;
+        private System.Windows.Forms.ListBox ListScripts;
     }
 }
 
