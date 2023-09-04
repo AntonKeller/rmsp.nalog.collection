@@ -45,6 +45,7 @@
             this.ListScripts.Size = new System.Drawing.Size(509, 450);
             this.ListScripts.TabIndex = 0;
             this.ListScripts.UseTabStops = false;
+            this.ListScripts.SelectedIndexChanged += new System.EventHandler(this.ListScripts_SelectedIndexChanged);
             this.ListScripts.DoubleClick += new System.EventHandler(this.ListScripts_DoubleClick);
             // 
             // Form1

@@ -20,8 +20,7 @@ namespace rmsp.nalog.collection.scripts
 
         public async Task Start(IPage page)
         {
-            //string INN = "7707738620";
-            string INN = "";
+            string INN = "7707738620";
             
             if (InputBox("Загрузка документа", "Введите ИНН:", ref INN) == DialogResult.OK)
             {

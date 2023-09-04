@@ -16,10 +16,13 @@ namespace rmsp.nalog.collection
 
         private PlaywrightExtra browser;
         private IPage Page;
-        private readonly List<IScript> Scripts = new List<IScript>()
+
+        // Хранит в себе список скриптов -> отображаются в ListBox главного окна
+        // Создайте скрипт -> Реализуйте IScript -> Добавьте в список ниже
+        private readonly List<IScript> Scripts = new List<IScript>() 
         {
             new TLoadPDFFileFromRegisterByINN(),
-            // Последующие скрипты
+            
             // ...............................
             // ...............................
             // ...............................
@@ -43,6 +46,11 @@ namespace rmsp.nalog.collection
                     await found.Start(this.Page);
                 }
             }
+        }
+
+        private void ListScripts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
